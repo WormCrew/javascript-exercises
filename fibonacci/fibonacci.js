@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const fibonacci = function(number) {
     number = parseInt(number)
     if((typeof (number) !='number')||(number <1)){
@@ -12,10 +11,3 @@ const fibonacci = function(number) {
 }
 
 module.exports = fibonacci
-=======
-const fibonacci = function() {
-
-}
-
-module.exports = fibonacci
->>>>>>> 9e1798000b696c64ba6837c3e79f1705328e9568
