@@ -2,6 +2,13 @@ body {
     background-color: gray;
 }
 
+@font-face {
+  font-family: 'MyWebFont';
+  src: url(fonts/digital-7.ttf)  format('truetype')
+
+}
+
+
 H1 {
     text-align: center;
     font-size: 20px;
@@ -10,7 +17,8 @@ H1 {
 
 #calculator {
     display: grid;
-    background-color: #101010;
+    color:#FEFFFF;
+    background-color: #C8C9E7;
     grid-template-columns: repeat(4, 100px);
     grid-template-areas:
     'a a a a'
@@ -18,21 +26,23 @@ H1 {
     margin: 0 auto;
     width: 400px;
     border-radius: 15px;
-    border-color: #101010;
+    border-color: #C8C9E7;
     border-style: solid;
     border-width: 36px;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .numberBtn {
+    color:#FEFFFF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
     text-align: center;
     /* padding: 2px; */
-    background-color: whitesmoke;
+    background-color:#4A4959;
     height: 70px;
     margin: 5px;
     border-radius: 5px;
+    border-color: #222131;
     font-weight:bold;
 }
 
@@ -41,8 +51,8 @@ H1 {
     font-size: 35px;
     text-align: center;
     /* padding: 2px; */
-    background-color:darkgrey;
-    
+    background-color:#676980;
+    color:#FEFFFF;
     height: 70px;
     margin: 5px;
     border-radius: 5px;
@@ -50,6 +60,7 @@ H1 {
 }
 
 .widebtn {
+    color:#FEFFFF;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
     border-radius: 5px;
@@ -58,7 +69,7 @@ H1 {
     margin: 5px;
     font-weight:bold;
 }
-#allClear {
+#clear {
     grid-area: c;
     background-color: orange;
 }
@@ -69,16 +80,32 @@ H1 {
 }
 
 #display {
+    color:#0A0809;
+    line-height:0.7em;
     grid-area: a;
-    font-size: 55px;
-    font-weight: bolder;
+    font-size: 72px;
+    font-weight: 100;
     border-style: solid;
+    border-color: #B8C2C4;
     text-align: right;
     padding: 9px;
-    background-color: azure;
+    background-color: rgba(145, 145, 145, 0.9);
     height: 50px;
     margin: 5px 5px 20px 5px;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'MyWebFont', 'Courier New', Courier, monospace;
+}
+#back_display {
+    color:rgb(65, 62, 63);
+    line-height:0.7em;
+    grid-area: a;
+    font-size: 72px;
+    font-weight: 100;
+    text-align: right;
+    padding: 9px;
+    height: 50px;
+    margin: 5px 5px 20px 5px;
+    border-style: solid;
+    font-family: 'MyWebFont', 'Courier New', Courier, monospace;
 }
 button:hover{
     filter: alpha(opacity=60);
